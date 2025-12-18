@@ -1,0 +1,19 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "s2c-mvp"
+version = "0.0.2"
+description = "Speech-to-Code MVP: sandbox + verifier"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["s2c*"]
+
+[theme]
+codeBackgroundColor = "#f8f9fb"
